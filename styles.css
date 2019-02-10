@@ -121,19 +121,19 @@ body {
 .spin::before{
     animation: spin 1s infinite linear;
 }
-@keyframes "spin" {
+@-webkit-keyframes spin {
     from {
         -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        transform: rotate(0deg);
     }
     to {
         -webkit-transform: rotate(359deg);
-        -moz-transform: rotate(359deg);
-        -o-transform: rotate(359deg);
-        -ms-transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
         transform: rotate(359deg);
     }
 }
