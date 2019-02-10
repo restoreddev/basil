@@ -1,0 +1,38 @@
+{
+  "name": "basil",
+  "version": "2.0.0",
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "test": "node_modules/.bin/jest"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "apollo-boost": "^0.1.16",
+    "graphql": "^14.0.2",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^7.0.2",
+    "next-routes": "^1.4.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-apollo": "^2.1.11",
+    "react-dom": "^16.6.3",
+    "tailwindcss": "^0.7.3"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "enzyme": "^3.8.0",
+    "enzyme-adapter-react-16": "^1.7.1",
+    "jest": "^23.6.0",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.7.0"
+  },
+  "resolutions": {
+    "ajv": "6.8.1",
+    "terser": "3.14.1"
+  }
+}

@@ -1,0 +1,33 @@
+query product($url: String!) {
+  products(
+    filter: {
+      url_key: {
+        eq: $url
+      }
+    }
+  ) {
+    items {
+      id
+      type_id
+      sku
+      name
+      description
+      image
+      image_label
+      stock_status
+      media_gallery_entries {
+        label
+        file
+      }
+      price {
+        regularPrice {
+          amount {
+            value
+            currency
+          }
+        }
+      }
+    }
+    total_count
+  }
+}

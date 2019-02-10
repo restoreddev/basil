@@ -1,0 +1,13 @@
+query category($id: Int!) {
+  category(id: $id) {
+    level
+    name
+    children {
+      id
+      level
+      name
+      url_key
+      position
+    }
+  }
+}

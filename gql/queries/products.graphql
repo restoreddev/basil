@@ -1,0 +1,23 @@
+query category($categoryId: String!, $pageSize: Int!) {
+  products(filter: {category_id: {eq: $categoryId}}, pageSize: $pageSize) {
+    items {
+      id
+      name
+      small_image
+      url_key
+      description
+      media_gallery_entries {
+        label
+        file
+      }
+      price {
+        regularPrice {
+          amount {
+            value
+            currency
+          }
+        }
+      }
+    }
+  }
+}

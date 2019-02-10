@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test product card Renders correctly 1`] = `
+<div
+  className="product-card"
+>
+  <a
+    className="product-card__content"
+    href="/chaz-kangeroo-hoodie"
+    onClick={[Function]}
+  >
+    <img
+      src="http://m2.localhost/media/catalog/product/m/h/mh01-gray_main_1.jpg"
+    />
+    <h4
+      className="pt-2"
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Chaz Kangeroo Hoodie",
+        }
+      }
+    />
+    <div
+      className="py-2"
+    >
+      $
+      52
+    </div>
+  </a>
+</div>
+`;

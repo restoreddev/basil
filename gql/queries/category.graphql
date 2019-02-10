@@ -1,0 +1,42 @@
+query category($id: Int!, $pageSize: Int!, $currentPage: Int!) {
+  category(id: $id) {
+    name
+    product_count
+    url_key
+    children {
+      id
+      level
+      name
+      url_key
+      position
+    }
+    breadcrumbs {
+      category_id
+      category_name
+      category_level
+      category_url_key
+    }
+    products(pageSize: $pageSize, currentPage: $currentPage) {
+      items {
+        id
+        name
+        small_image
+        url_key
+        description
+        media_gallery_entries {
+          label
+          file
+        }
+        price {
+          regularPrice {
+            amount {
+              value
+              currency
+            }
+          }
+        }
+      }
+      total_count
+    }
+  }
+}

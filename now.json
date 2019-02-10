@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "basil",
+    "builds": [
+        { "src": "next.config.js", "use": "@now/next" }
+    ],
+    "routes": [
+        { "src": "/(?<slug>[^/]+)$", "dest": "/content?slug=$slug" }
+    ]
+}

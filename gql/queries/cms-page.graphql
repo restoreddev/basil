@@ -1,0 +1,7 @@
+query cmsPage($id: Int!) {
+  cmsPage(id: $id) {
+    title
+    content_heading
+    content
+  }
+}
